@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Parker Sign Up</title>
+  <link rel="stylesheet" href="css/parker-signup.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Parker Sign Up</h2>
+    <input type="text" placeholder="Full Name" required />
+    <input type="email" placeholder="Email ID" required />
+    <input type="text" id="phone" placeholder="+91XXXXXXXXXX" value="+91" required />
+    <input type="text" placeholder="Vehicle Type" required />
+    <input type="text" placeholder="Vehicle Number" required />
+    
+    <button onclick="signUp()">Sign Up</button>
+    <button onclick="goToLogin()">Login</button>
+  </div>
+
+  <!-- Switch Button at Bottom-Left: "Are you a Landlord?" (links to Landlord Sign-Up) -->
+  <button class="switch-button" onclick="goToLandlord()">Are you a Landlord?</button>
+
+  <script src="js/parker-signup.js"></script>
+</body>
+</html>

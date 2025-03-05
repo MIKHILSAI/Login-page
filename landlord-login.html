@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Landlord Login</title>
+  <link rel="stylesheet" href="css/landlord-login.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Landlord Login</h2>
+    
+    <!-- Phone Number -->
+    <input type="text" id="phone" placeholder="+91XXXXXXXXXX" value="+91" required />
+
+    <!-- 4-Digit PIN in 4 boxes -->
+    <div class="pin-container">
+      <input type="text" class="pin-box" maxlength="1" oninput="moveNext(this,1)" />
+      <input type="text" class="pin-box" maxlength="1" oninput="moveNext(this,2)" />
+      <input type="text" class="pin-box" maxlength="1" oninput="moveNext(this,3)" />
+      <input type="text" class="pin-box" maxlength="1" />
+    </div>
+
+    <!-- Reset Pass Code (hypertext) -->
+    <p class="reset-link" onclick="resetPassCode()">Reset Pass Code</p>
+
+    <!-- Buttons -->
+    <button onclick="login()">Login</button>
+    <button onclick="goToSignUp()">Sign Up</button>
+  </div>
+
+  <!-- Switch Button at Bottom-Left: "Are you a Parker?" (links to Parker Login) -->
+  <button class="switch-button" onclick="goToParker()">Are you a Parker?</button>
+
+  <script src="js/landlord-login.js"></script>
+</body>
+</html>

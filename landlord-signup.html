@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Landlord Sign Up</title>
+  <link rel="stylesheet" href="css/landlord-signup.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Landlord Sign Up</h2>
+    <input type="text" placeholder="Full Name" required />
+    <input type="email" placeholder="Email ID" required />
+    <input type="text" id="phone" placeholder="+91XXXXXXXXXX" value="+91" required />
+    <!-- Address as button -->
+    <button class="address-btn" onclick="enterAddress()">Address</button>
+    <input type="password" placeholder="Pass Code" required />
+    
+    <button onclick="signUp()">Sign Up</button>
+    <button onclick="goToLogin()">Login</button>
+  </div>
+
+  <!-- Switch Button at Bottom-Left: "Are you a Parker?" (links to Parker Sign-Up) -->
+  <button class="switch-button" onclick="goToParker()">Are you a Parker?</button>
+
+  <script src="js/landlord-signup.js"></script>
+</body>
+</html>
