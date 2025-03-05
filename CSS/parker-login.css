@@ -1,0 +1,94 @@
+/* Parker Login uses a blue gradient */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #36d1dc, #5b86e5);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .container {
+    background: #fff;
+    width: 320px;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .pin-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .pin-box {
+    width: 60px;
+    margin: 5px 2px;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .reset-link {
+    color: #5b86e5;
+    text-decoration: underline;
+    margin: 10px 0;
+    cursor: pointer;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #5b86e5;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #4a75c2;
+  }
+  
+  /* Switch Button at Bottom-Left */
+  .switch-button {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    /* Let width adjust automatically */
+    width: auto;
+    padding: 0 12px;
+    height: 45px;
+    background: #5b86e5;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    line-height: 45px;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .switch-button:hover {
+    background: #4a75c2;
+  }
+  
